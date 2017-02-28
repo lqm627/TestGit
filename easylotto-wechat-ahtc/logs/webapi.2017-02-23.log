@@ -1,0 +1,755 @@
+09:31:00.867 INFO  []-[] WebApiApplication -- Starting WebApiApplication on lqm with PID 7664 (M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes started by lqm in M:\SSYCLWorkOne\easylotto-wechat-ahtc) 
+09:31:00.886 INFO  []-[] WebApiApplication -- The following profiles are active: gzdev 
+09:31:00.920 INFO  []-[] Version -- HV000001: Hibernate Validator 5.2.4.Final 
+09:31:01.160 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797b0699: startup date [Thu Feb 23 09:31:01 CST 2017]; root of context hierarchy 
+09:31:02.532 INFO  []-[] XmlBeanDefinitionReader -- Loading XML bean definitions from class path resource [applicationContext-service.xml] 
+09:31:02.667 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'clientServiceFactory' with a different definition: replacing [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes\com\easylotto\core\service\ClientServiceFactory.class]] with [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-service.xml]] 
+09:31:02.819 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]] 
+09:31:03.619 INFO  []-[] PostProcessorRegistrationDelegate$BeanPostProcessorChecker -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b665d45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+09:31:04.413 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 8080 (http) 
+09:31:04.427 INFO  []-[] StandardService -- Starting service Tomcat 
+09:31:04.429 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:31:04.569 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:31:04.570 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 3410 ms 
+09:31:04.959 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'metricFilter' to: [/*] 
+09:31:04.961 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'characterEncodingFilter' to: [/*] 
+09:31:04.963 INFO  []-[] DelegatingFilterProxyRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:31:04.964 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'webRequestLoggingFilter' to: [/*] 
+09:31:04.964 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'loggerMDCFilter' to: [/*] 
+09:31:04.964 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'applicationContextIdFilter' to: [/*] 
+09:31:04.964 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:31:05.611 INFO  []-[] AuthenticationManagerConfiguration -- 
+
+Using default security password: 94605fad-28b4-471f-b207-67bb87296b18
+ 
+09:31:05.690 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error'], org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@5ee93aab]], [] 
+09:31:05.785 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@1ac779a0, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f19bf9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b17c909, org.springframework.security.web.header.HeaderWriterFilter@5b232715, org.springframework.security.web.csrf.CsrfFilter@44f4d983, org.springframework.security.web.authentication.logout.LogoutFilter@50f83a03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e6ab5d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f783aac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f06700, org.springframework.security.web.session.SessionManagementFilter@521ed041, org.springframework.security.web.access.ExceptionTranslationFilter@47fc4fe3] 
+09:31:06.526 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  
+09:31:06.527 INFO  []-[] ThreadPoolTaskExecutorConfig -- --------------->>>   threadPoolTaskExecutor >>>> 0 
+09:31:06.538 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  'threadPoolTaskExecutor' 
+09:31:07.070 INFO  []-[] AhjcWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"ahjc","pubId":1,"server":"http://ahjc.24cai.com/TEST_SEV/","token":"ahjc","type":"1","urls":["http://ahjc.24cai.com/TEST_SEV/","http://ahjc.caicai.com/",null,null,null,null,null,null,null,null],"webserver":"http://ahjc.caicai.com/","wxAccountEnum":"AHJC"} 
+09:31:07.507 INFO  []-[] AhtcWxService -- {"appid":"wxea356d53d3fa86d9","appsecret":"a8990930be1ee1964ebb9a71bd49ab5b","front":"http://lqm.24cai.com/memberCenter.html","key":"yicaile","noactivity":"","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":0,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html","",null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"AHTC"} 
+09:31:07.545 INFO  []-[] JwlWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"jwl","pubId":3,"server":"http://lqm.24cai.com/TEST_SEV/","token":"jwl","type":"1","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/",null,null,null,null,null,null,null,null],"webserver":"http://lqm.24cai.com/","wxAccountEnum":"JWL"} 
+09:31:07.609 INFO  []-[] LqmWxService -- {"appid":"wxe50759beade9edb0","appsecret":"09d1683fc654faed415e89c44a178533","front":"http://lqm.24cai.com/memberCenter.html","key":"ahtc","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":2,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html",null,null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"LQM"} 
+09:31:08.219 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.220 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:31:08.221 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.222 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:31:08.223 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.223 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:31:08.225 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.225 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:31:08.228 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/findActivityMember],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.findActivityMember(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.228 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/coupletsActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.coupletsActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.228 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/tggjsjActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.tggjsjActivityFrom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.229 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/voteActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.voteActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.229 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getVoteLists],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getVoteLists(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.229 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getDateBaseTime],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getDateBaseTime(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.230 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{serkey}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ClientServiceController.excute(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:31:08.230 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{id}/detail]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.value(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception 
+09:31:08.230 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{type}/list]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:31:08.231 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/redirect/ssl/{key}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.redirectView(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.232 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}/{id}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.232 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.233 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/q/{key}]}" onto public void com.wechat.webapi.web.controller.QController.key(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.234 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/test/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:31:08.234 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:31:08.235 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/client/service],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.WechatClientServiceControllerler.getData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:31:08.236 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/menu/{server}]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:31:08.236 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/getMenu]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getMenu() 
+09:31:08.237 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String) 
+09:31:08.241 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+09:31:08.242 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+09:31:08.242 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+09:31:08.245 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+09:31:08.246 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:31:08.460 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:31:08.461 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:31:08.636 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797b0699: startup date [Thu Feb 23 09:31:01 CST 2017]; root of context hierarchy 
+09:31:09.008 INFO  []-[] [/] -- jolokia: No access restrictor found, access to any MBean is allowed 
+09:31:09.834 INFO  []-[] VelocityConfigurer -- ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine 
+09:31:09.849 INFO  []-[] SpringResourceLoader -- SpringResourceLoader for Velocity: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797b0699: startup date [Thu Feb 23 09:31:01 CST 2017]; root of context hierarchy] and resource loader paths [classpath:/templates/] 
+09:31:10.090 WARN  []-[] VelocityAutoConfiguration -- Cannot find template location: classpath:/templates/ (please add some templates, check your Velocity configuration, or set spring.velocity.checkTemplateLocation=false) 
+09:31:10.298 INFO  []-[] AnnotationMBeanExporter -- Registering beans for JMX exposure on startup 
+09:31:10.305 INFO  []-[] EndpointMBeanExporter -- Registering beans for JMX exposure on startup 
+09:31:10.308 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5af56240: startup date [Thu Feb 23 09:31:10 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797b0699 
+09:31:10.352 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration] 
+09:31:10.414 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 7002 (http) 
+09:31:10.415 INFO  []-[] StandardService -- Starting service Tomcat 
+09:31:10.416 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:31:10.428 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:31:10.428 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 120 ms 
+09:31:10.452 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:31:10.453 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:31:10.543 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5af56240: startup date [Thu Feb 23 09:31:10 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@797b0699 
+09:31:10.552 INFO  []-[] RequestMappingHandlerAdapter -- Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice 
+09:31:10.643 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) 
+09:31:10.644 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.644 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) 
+09:31:10.644 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.645 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.646 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal) 
+09:31:10.647 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.648 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.648 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.649 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() 
+09:31:10.651 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.651 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.652 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:31:10.652 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception 
+09:31:10.667 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke() 
+09:31:10.672 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:31:10.672 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:31:11.369 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-7002"] 
+09:31:11.380 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-7002"] 
+09:31:11.402 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:31:11.424 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 7002 (http) 
+09:31:11.431 INFO  []-[] DefaultLifecycleProcessor -- Starting beans in phase 0 
+09:31:11.435 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint] 
+09:31:11.467 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+09:31:11.473 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+09:31:11.477 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+09:31:11.481 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+09:31:11.487 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+09:31:11.491 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+09:31:11.496 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+09:31:11.503 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+09:31:11.506 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+09:31:11.530 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-8080"] 
+09:31:11.532 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-8080"] 
+09:31:11.534 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:31:11.535 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:31:11 
+09:31:11.540 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 8080 (http) 
+09:31:11.546 INFO  []-[] WebApiApplication -- Started WebApiApplication in 11.304 seconds (JVM running for 11.899) 
+09:31:21.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:31:21 
+09:31:31.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:31:31 
+09:31:41.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:31:41 
+09:31:51.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:31:51 
+09:32:01.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:01 
+09:32:11.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:11 
+09:32:21.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:21 
+09:32:31.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:31 
+09:32:41.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:41 
+09:32:51.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:32:51 
+09:33:01.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:01 
+09:33:11.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:11 
+09:33:21.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:21 
+09:33:31.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:31 
+09:33:41.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:41 
+09:33:51.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:33:51 
+09:34:01.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:01 
+09:34:11.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:11 
+09:34:21.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:21 
+09:34:31.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:31 
+09:34:41.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:41 
+09:34:51.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:34:51 
+09:35:01.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:01 
+09:35:11.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:11 
+09:35:21.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:21 
+09:35:24.195 INFO  []-[] [/] -- Initializing Spring FrameworkServlet 'dispatcherServlet' 
+09:35:24.195 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization started 
+09:35:24.219 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms 
+09:35:24.244 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    280938211B86B0DD3D4FA54405CB12C5 
+09:35:24.245 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    280938211B86B0DD3D4FA54405CB12C5 
+09:35:24.272 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[9fad2e5770a8a7a9cebc81db60221df27cef2f8a,1487813718,1910647286,null] 
+09:35:24.282 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 13 
+09:35:24.475 INFO  [58.247.206.151]-[/ahtc/service] WechatHandler -- ------------------------------------------------------------------ >>>>    subscribe  start !!!  
+09:35:24.475 INFO  [58.247.206.151]-[/ahtc/service] WechatHandler --  --------------->> 用户 OPENID: oHbPrw7CoyTN2M_gaMlxD2AwicLU 
+09:35:24.536 INFO  []-[] LogHandler -- 
+ --------------------------------  接收到请求消息，内容：{
+  "toUser" : "gh_d8383506eda6",
+  "fromUser" : "oHbPrw7CoyTN2M_gaMlxD2AwicLU",
+  "createTime" : 1487813717,
+  "msgType" : "event",
+  "event" : "subscribe",
+  "eventKey" : ""
+} 
+09:35:28.848 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    AF83E8A254FBFAE16FE5BB6C0C8EE68E 
+09:35:28.849 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    AF83E8A254FBFAE16FE5BB6C0C8EE68E 
+09:35:28.850 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[9fad2e5770a8a7a9cebc81db60221df27cef2f8a,1487813718,1910647286,null] 
+09:35:28.850 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 0 
+09:35:28.854 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 4 
+09:35:30.560 INFO  [58.247.206.151]-[/ahtc/service] WechatHandlerService --  ------->>>  threadPoolTaskExecutor.getActiveCount() = 0 
+09:35:30.861 WARN  []-[] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=5 ms; 
+09:35:30.890 WARN  []-[] SlowQueryReport -- Slow Query Report SQL=insert into ecp_menu_click_log (int_rec_id,int_account_id,int_menu_type,vc_open_id,dt_click_time) Values (?,?,?,?,?); time=4 ms; 
+09:35:31.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:31 
+09:35:32.368 ERROR [58.247.206.151]-[/ahtc/service] WechatHandler --  
+java.lang.NoSuchMethodException: com.easylotto.core.service.WechatHandlerService.yicaile()
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at com.wechat.handler.WechatHandler.handle(WechatHandler.java:112)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouterRule.service(WxMpMessageRouterRule.java:217)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouter.route(WxMpMessageRouter.java:172)
+	at com.wechat.service.BaseWxService.route(BaseWxService.java:140)
+	at com.wechat.controller.AbstractWxPortalController.message(AbstractWxPortalController.java:113)
+	at com.wechat.controller.AbstractWxPortalController.post(AbstractWxPortalController.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextHeaderFilter.doFilterInternal(EndpointWebMvcAutoConfiguration.java:237)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.wechat.webapi.web.filter.LoggerMDCFilter.doFilterInternal(LoggerMDCFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:112)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:103)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+09:35:33.893 WARN  [58.247.206.151]-[/ahtc/service] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=1 ms; 
+09:35:34.586 WARN  [58.247.206.151]-[/ahtc/service] SlowQueryReport -- Slow Query Report SQL=update ecp_user_info set VC_NICKNAME=?,VC_SEX=?,VC_USER_PROVINCE=?,VC_USER_CITY=?,VC_LANGUAGE=?,VC_HEADIMGURL=?,INT_SUB_STATUS=? where INT_ACCOUNT_ID=?; time=1 ms; 
+09:35:34.590 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 10308 
+09:35:41.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:41 
+09:35:51.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:35:51 
+09:35:57.515 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    353D9D510BE829BD3BF00A4D70E348D4 
+09:35:57.516 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    353D9D510BE829BD3BF00A4D70E348D4 
+09:35:57.520 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[83808a4473ed72a2721d4a4a7a4da6f7d0176dee,1487813751,47854426,null] 
+09:35:57.522 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 3 
+09:35:57.561 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 38 
+09:36:01.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:36:01 
+09:36:04.873 INFO  [58.247.206.146]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    B1C6AA93347961334F3DEA0499E94271 
+09:36:04.874 INFO  [58.247.206.146]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    B1C6AA93347961334F3DEA0499E94271 
+09:36:04.877 INFO  [58.247.206.146]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[96e4a9b3dee29bc2bfba807a5803f639bab8ec9e,1487813759,443702802,null] 
+09:36:04.879 INFO  [58.247.206.146]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 2 
+09:36:04.884 INFO  [58.247.206.146]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 5 
+09:36:11.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:36:11 
+09:36:12.843 INFO  [101.226.33.221]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    A88CE3C9DC7FD8030B93157988A2B490 
+09:36:12.843 INFO  [101.226.33.221]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    A88CE3C9DC7FD8030B93157988A2B490 
+09:36:21.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:36:21 
+09:36:30.814 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    548DC53E383759AF7E9251D36F9D76BE 
+09:36:30.814 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    548DC53E383759AF7E9251D36F9D76BE 
+09:36:30.817 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[5e4b3486095d9db0e58595cf1cd265f990108350,1487813785,1208628164,null] 
+09:36:30.817 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 1 
+09:36:30.820 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 3 
+09:36:31.530 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:36:31 
+09:36:41.531 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:36:41 
+09:48:32.646 INFO  []-[] WebApiApplication -- Starting WebApiApplication on lqm with PID 8260 (M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes started by lqm in M:\SSYCLWorkOne\easylotto-wechat-ahtc) 
+09:48:32.653 INFO  []-[] WebApiApplication -- The following profiles are active: gzdev 
+09:48:32.690 INFO  []-[] Version -- HV000001: Hibernate Validator 5.2.4.Final 
+09:48:32.889 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@312aa7c: startup date [Thu Feb 23 09:48:32 CST 2017]; root of context hierarchy 
+09:48:34.057 INFO  []-[] XmlBeanDefinitionReader -- Loading XML bean definitions from class path resource [applicationContext-service.xml] 
+09:48:34.138 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'clientServiceFactory' with a different definition: replacing [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes\com\easylotto\core\service\ClientServiceFactory.class]] with [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-service.xml]] 
+09:48:34.255 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]] 
+09:48:34.869 INFO  []-[] PostProcessorRegistrationDelegate$BeanPostProcessorChecker -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56ebd4b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+09:48:35.723 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 8080 (http) 
+09:48:35.736 INFO  []-[] StandardService -- Starting service Tomcat 
+09:48:35.737 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:48:35.852 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:48:35.852 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 2963 ms 
+09:48:36.256 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'metricFilter' to: [/*] 
+09:48:36.256 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'characterEncodingFilter' to: [/*] 
+09:48:36.258 INFO  []-[] DelegatingFilterProxyRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:48:36.258 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'webRequestLoggingFilter' to: [/*] 
+09:48:36.258 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'loggerMDCFilter' to: [/*] 
+09:48:36.259 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'applicationContextIdFilter' to: [/*] 
+09:48:36.259 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:48:36.753 INFO  []-[] AuthenticationManagerConfiguration -- 
+
+Using default security password: a88bbd2f-2986-483d-b41f-bdc69954690b
+ 
+09:48:36.808 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error'], org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@4da7e4d6]], [] 
+09:48:36.887 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@4a32d4a0, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@155c50ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@60c2a7e, org.springframework.security.web.header.HeaderWriterFilter@18cb2bc2, org.springframework.security.web.csrf.CsrfFilter@3ea55908, org.springframework.security.web.authentication.logout.LogoutFilter@7dd25b0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cbb56ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c0b8978, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52709db, org.springframework.security.web.session.SessionManagementFilter@4cc528c1, org.springframework.security.web.access.ExceptionTranslationFilter@a2826ed] 
+09:48:37.629 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  
+09:48:37.630 INFO  []-[] ThreadPoolTaskExecutorConfig -- --------------->>>   threadPoolTaskExecutor >>>> 0 
+09:48:37.638 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  'threadPoolTaskExecutor' 
+09:48:38.154 INFO  []-[] AhjcWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"ahjc","pubId":1,"server":"http://ahjc.24cai.com/TEST_SEV/","token":"ahjc","type":"1","urls":["http://ahjc.24cai.com/TEST_SEV/","http://ahjc.caicai.com/",null,null,null,null,null,null,null,null],"webserver":"http://ahjc.caicai.com/","wxAccountEnum":"AHJC"} 
+09:48:39.399 INFO  []-[] AhtcWxService -- {"appid":"wxea356d53d3fa86d9","appsecret":"a8990930be1ee1964ebb9a71bd49ab5b","front":"http://lqm.24cai.com/memberCenter.html","key":"yicaile","noactivity":"","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":0,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html","",null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"AHTC"} 
+09:48:40.045 INFO  []-[] JwlWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"jwl","pubId":3,"server":"http://lqm.24cai.com/TEST_SEV/","token":"jwl","type":"1","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/",null,null,null,null,null,null,null,null],"webserver":"http://lqm.24cai.com/","wxAccountEnum":"JWL"} 
+09:48:40.780 INFO  []-[] LqmWxService -- {"appid":"wxe50759beade9edb0","appsecret":"09d1683fc654faed415e89c44a178533","front":"http://lqm.24cai.com/memberCenter.html","key":"ahtc","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":2,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html",null,null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"LQM"} 
+09:48:45.287 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.290 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:48:45.296 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.297 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:48:45.304 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.305 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:48:45.322 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.323 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:48:45.344 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/voteActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.voteActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.346 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getVoteLists],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getVoteLists(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.347 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getDateBaseTime],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getDateBaseTime(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.349 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/coupletsActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.coupletsActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.351 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/findActivityMember],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.findActivityMember(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.352 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/tggjsjActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.tggjsjActivityFrom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.356 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{serkey}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ClientServiceController.excute(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:48:45.359 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{id}/detail]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.value(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception 
+09:48:45.361 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{type}/list]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:48:45.366 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/redirect/ssl/{key}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.redirectView(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.367 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}/{id}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.368 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.371 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/q/{key}]}" onto public void com.wechat.webapi.web.controller.QController.key(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:45.375 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/test/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:48:45.376 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:48:45.380 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/client/service],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.WechatClientServiceControllerler.getData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:48:45.384 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/menu/{server}]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:48:45.386 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/getMenu]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getMenu() 
+09:48:45.391 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String) 
+09:48:45.423 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+09:48:45.427 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+09:48:45.429 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+09:48:45.455 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+09:48:45.457 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:48:47.122 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:48:47.123 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:48:49.027 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@312aa7c: startup date [Thu Feb 23 09:48:32 CST 2017]; root of context hierarchy 
+09:48:51.035 INFO  []-[] [/] -- jolokia: No access restrictor found, access to any MBean is allowed 
+09:48:59.408 INFO  []-[] VelocityConfigurer -- ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine 
+09:48:59.438 INFO  []-[] SpringResourceLoader -- SpringResourceLoader for Velocity: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@312aa7c: startup date [Thu Feb 23 09:48:32 CST 2017]; root of context hierarchy] and resource loader paths [classpath:/templates/] 
+09:49:00.004 WARN  []-[] VelocityAutoConfiguration -- Cannot find template location: classpath:/templates/ (please add some templates, check your Velocity configuration, or set spring.velocity.checkTemplateLocation=false) 
+09:49:00.993 INFO  []-[] AnnotationMBeanExporter -- Registering beans for JMX exposure on startup 
+09:49:01.116 INFO  []-[] EndpointMBeanExporter -- Registering beans for JMX exposure on startup 
+09:49:01.132 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c335b9: startup date [Thu Feb 23 09:49:01 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@312aa7c 
+09:49:01.597 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration] 
+09:49:02.416 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 7002 (http) 
+09:49:02.418 INFO  []-[] StandardService -- Starting service Tomcat 
+09:49:02.419 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:49:02.459 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:49:02.460 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 1328 ms 
+09:49:02.617 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:49:02.619 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:49:03.538 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c335b9: startup date [Thu Feb 23 09:49:01 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@312aa7c 
+09:49:03.707 INFO  []-[] RequestMappingHandlerAdapter -- Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice 
+09:49:04.832 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.835 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception 
+09:49:04.838 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.841 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.848 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) 
+09:49:04.849 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.852 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.856 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal) 
+09:49:04.860 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.865 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.868 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.873 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) 
+09:49:04.874 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:49:04.879 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() 
+09:49:04.989 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:49:04.990 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:49:05.139 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke() 
+09:49:09.951 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-7002"] 
+09:49:10.011 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-7002"] 
+09:49:10.027 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:49:10.092 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 7002 (http) 
+09:49:10.143 INFO  []-[] DefaultLifecycleProcessor -- Starting beans in phase 0 
+09:49:10.194 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint] 
+09:49:10.362 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+09:49:10.421 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+09:49:10.470 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+09:49:10.518 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+09:49:10.565 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+09:49:10.611 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+09:49:10.657 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+09:49:10.742 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+09:49:10.792 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+09:49:10.997 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-8080"] 
+09:49:10.999 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-8080"] 
+09:49:11.018 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:49:11.024 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:49:11 
+09:49:11.024 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 8080 (http) 
+09:49:11.096 INFO  []-[] WebApiApplication -- Started WebApiApplication in 38.885 seconds (JVM running for 39.367) 
+09:49:20.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:49:20 
+09:49:30.999 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:49:30 
+09:49:40.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:49:40 
+09:49:46.577 INFO  []-[] [/] -- Initializing Spring FrameworkServlet 'dispatcherServlet' 
+09:49:46.577 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization started 
+09:49:46.768 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization completed in 190 ms 
+09:49:46.845 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    BDD819C4FE14869F8AB62C6FAEA6C472 
+09:49:46.847 INFO  [58.247.206.151]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    BDD819C4FE14869F8AB62C6FAEA6C472 
+09:49:50.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:49:50 
+09:49:51.338 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    CB24364F007D8EE9142809842B8A4E4F 
+09:49:51.339 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    CB24364F007D8EE9142809842B8A4E4F 
+09:49:56.367 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    68E3623287B3F38DBEC1F3D4DFA069D0 
+09:49:56.368 INFO  [58.247.206.141]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    68E3623287B3F38DBEC1F3D4DFA069D0 
+09:49:57.764 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[9fa479ce030e5dbfd8e5eb50a2f5c33cf089000e,1487814580,5918326,null] 
+09:50:00.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:00 
+09:50:02.188 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 9109 
+09:50:06.468 INFO  [58.247.206.151]-[/ahtc/service] WechatHandler -- ------------------------------------------------------------------ >>>>    noactivity  start !!!  
+09:50:06.469 INFO  [58.247.206.151]-[/ahtc/service] WechatHandler --  --------------->> 用户 OPENID: oHbPrw7CoyTN2M_gaMlxD2AwicLU 
+09:50:06.607 INFO  []-[] LogHandler -- 
+ --------------------------------  接收到请求消息，内容：{
+  "toUser" : "gh_d8383506eda6",
+  "fromUser" : "oHbPrw7CoyTN2M_gaMlxD2AwicLU",
+  "createTime" : 1487814580,
+  "msgType" : "event",
+  "event" : "CLICK",
+  "eventKey" : "noactivity"
+} 
+09:50:09.222 INFO  [58.247.206.151]-[/ahtc/service] WechatHandlerService --  ------->>>  threadPoolTaskExecutor.getActiveCount() = 0 
+09:50:10.209 WARN  []-[] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=1 ms; 
+09:50:10.878 ERROR [58.247.206.151]-[/ahtc/service] WechatHandler --  
+java.lang.NoSuchMethodException: com.easylotto.core.service.WechatHandlerService.yicaile()
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at com.wechat.handler.WechatHandler.handle(WechatHandler.java:112)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouterRule.service(WxMpMessageRouterRule.java:217)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouter.route(WxMpMessageRouter.java:172)
+	at com.wechat.service.BaseWxService.route(BaseWxService.java:140)
+	at com.wechat.controller.AbstractWxPortalController.message(AbstractWxPortalController.java:113)
+	at com.wechat.controller.AbstractWxPortalController.post(AbstractWxPortalController.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextHeaderFilter.doFilterInternal(EndpointWebMvcAutoConfiguration.java:237)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.wechat.webapi.web.filter.LoggerMDCFilter.doFilterInternal(LoggerMDCFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:112)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:103)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+09:50:10.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:10 
+09:50:13.557 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[9fa479ce030e5dbfd8e5eb50a2f5c33cf089000e,1487814580,5918326,null] 
+09:50:15.333 WARN  [58.247.206.151]-[/ahtc/service] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=3 ms; 
+09:50:16.692 WARN  [58.247.206.151]-[/ahtc/service] SlowQueryReport -- Slow Query Report SQL=update ecp_user_info set VC_NICKNAME=?,VC_SEX=?,VC_USER_PROVINCE=?,VC_USER_CITY=?,VC_LANGUAGE=?,VC_HEADIMGURL=?,INT_SUB_STATUS=? where INT_ACCOUNT_ID=?; time=1 ms; 
+09:50:16.698 INFO  [58.247.206.151]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 14159 
+09:50:18.537 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 4980 
+09:50:20.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:20 
+09:50:22.290 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.POST          >>  接收到来自微信服务器的认证消息：[9fa479ce030e5dbfd8e5eb50a2f5c33cf089000e,1487814580,5918326,null] 
+09:50:24.757 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 3 run time 2468 
+09:50:27.336 INFO  [58.247.206.141]-[/ahtc/service] WechatHandler -- ------------------------------------------------------------------ >>>>    noactivity  start !!!  
+09:50:27.337 INFO  [58.247.206.141]-[/ahtc/service] WechatHandler --  --------------->> 用户 OPENID: oHbPrw7CoyTN2M_gaMlxD2AwicLU 
+09:50:27.337 INFO  []-[] LogHandler -- 
+ --------------------------------  接收到请求消息，内容：{
+  "toUser" : "gh_d8383506eda6",
+  "fromUser" : "oHbPrw7CoyTN2M_gaMlxD2AwicLU",
+  "createTime" : 1487814580,
+  "msgType" : "event",
+  "event" : "CLICK",
+  "eventKey" : "noactivity"
+} 
+09:50:30.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:30 
+09:50:37.823 INFO  [58.247.206.141]-[/ahtc/service] WechatHandlerService --  ------->>>  threadPoolTaskExecutor.getActiveCount() = 0 
+09:50:37.825 ERROR [58.247.206.141]-[/ahtc/service] WechatHandler --  
+java.lang.NoSuchMethodException: com.easylotto.core.service.WechatHandlerService.yicaile()
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at com.wechat.handler.WechatHandler.handle(WechatHandler.java:112)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouterRule.service(WxMpMessageRouterRule.java:217)
+	at me.chanjar.weixin.mp.api.WxMpMessageRouter.route(WxMpMessageRouter.java:172)
+	at com.wechat.service.BaseWxService.route(BaseWxService.java:140)
+	at com.wechat.controller.AbstractWxPortalController.message(AbstractWxPortalController.java:113)
+	at com.wechat.controller.AbstractWxPortalController.post(AbstractWxPortalController.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextHeaderFilter.doFilterInternal(EndpointWebMvcAutoConfiguration.java:237)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.wechat.webapi.web.filter.LoggerMDCFilter.doFilterInternal(LoggerMDCFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:112)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:207)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:103)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+09:50:37.840 WARN  []-[] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=4 ms; 
+09:50:39.051 WARN  [58.247.206.141]-[/ahtc/service] SlowQueryReport -- Slow Query Report SQL=select * from ecp_user_info where vc_open_id=? AND INT_WECHAT_TYPE=?; time=3 ms; 
+09:50:39.438 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 20900 
+09:50:40.476 INFO  [58.247.206.141]-[/ahtc/service] AhtcWechatController --  ----------->>> 4 run time 15718 
+09:50:40.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:40 
+09:50:50.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:50:50 
+09:50:57.186 INFO  [101.226.233.149]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    CCE2721F3430E78CA02D9EE698EA7CAC 
+09:50:57.187 INFO  [101.226.233.149]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    CCE2721F3430E78CA02D9EE698EA7CAC 
+09:51:00.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:00 
+09:51:01.355 INFO  [101.226.233.149]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.GET >>  接收到来自微信服务器的认证消息：[2364c76c24b3a206bdda3c7bf6196f95b754caf1,1487814651,1985599623,8995843285423407103] 
+09:51:10.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:10 
+09:51:17.525 INFO  [101.226.233.154]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    CC4B362481035E88BBD6129804414990 
+09:51:17.526 INFO  [101.226.233.154]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    CC4B362481035E88BBD6129804414990 
+09:51:19.942 INFO  [101.226.233.154]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.GET >>  接收到来自微信服务器的认证消息：[88cd9ada290701fe16c0d8c4d46ac1ff9f00d446,1487814671,1940089963,6549389253791410703] 
+09:51:20.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:20 
+09:51:30.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:30 
+09:51:41.006 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:41 
+09:51:50.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:51:50 
+09:52:00.996 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:00 
+09:52:10.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:10 
+09:52:20.998 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:20 
+09:52:30.997 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:30 
+09:52:40.996 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:40 
+09:52:49.279 INFO  []-[] WebApiApplication -- Starting WebApiApplication on lqm with PID 11972 (M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes started by lqm in M:\SSYCLWorkOne\easylotto-wechat-ahtc) 
+09:52:49.286 INFO  []-[] WebApiApplication -- The following profiles are active: gzdev 
+09:52:49.324 INFO  []-[] Version -- HV000001: Hibernate Validator 5.2.4.Final 
+09:52:49.529 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Thu Feb 23 09:52:49 CST 2017]; root of context hierarchy 
+09:52:50.693 INFO  []-[] XmlBeanDefinitionReader -- Loading XML bean definitions from class path resource [applicationContext-service.xml] 
+09:52:50.781 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'clientServiceFactory' with a different definition: replacing [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [M:\SSYCLWorkOne\easylotto-wechat-ahtc\target\classes\com\easylotto\core\service\ClientServiceFactory.class]] with [Generic bean: class [com.easylotto.core.service.ClientServiceFactory]; scope=; abstract=false; lazyInit=false; autowireMode=1; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-service.xml]] 
+09:52:50.903 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]] 
+09:52:51.459 INFO  []-[] PostProcessorRegistrationDelegate$BeanPostProcessorChecker -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$297973b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+09:52:52.276 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 8080 (http) 
+09:52:52.293 INFO  []-[] StandardService -- Starting service Tomcat 
+09:52:52.294 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:52:52.428 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:52:52.428 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 2899 ms 
+09:52:52.816 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'metricFilter' to: [/*] 
+09:52:52.817 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'characterEncodingFilter' to: [/*] 
+09:52:52.818 INFO  []-[] DelegatingFilterProxyRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:52:52.818 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'webRequestLoggingFilter' to: [/*] 
+09:52:52.818 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'loggerMDCFilter' to: [/*] 
+09:52:52.818 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'applicationContextIdFilter' to: [/*] 
+09:52:52.819 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:52:53.312 INFO  []-[] AuthenticationManagerConfiguration -- 
+
+Using default security password: 766aca06-2fd3-4ccf-a32d-c893ed6f9f33
+ 
+09:52:53.370 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error'], org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@7db489f6]], [] 
+09:52:53.458 INFO  []-[] DefaultSecurityFilterChain -- Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@4830c4dd, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c48fa4, org.springframework.security.web.context.SecurityContextPersistenceFilter@732d50ab, org.springframework.security.web.header.HeaderWriterFilter@3a8f1e39, org.springframework.security.web.csrf.CsrfFilter@c711259, org.springframework.security.web.authentication.logout.LogoutFilter@3ecd9e2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2afa2d63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ec684cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47466438, org.springframework.security.web.session.SessionManagementFilter@f6eeca8, org.springframework.security.web.access.ExceptionTranslationFilter@4777fefe] 
+09:52:54.170 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  
+09:52:54.170 INFO  []-[] ThreadPoolTaskExecutorConfig -- --------------->>>   threadPoolTaskExecutor >>>> 0 
+09:52:54.182 INFO  []-[] ThreadPoolTaskExecutor -- Initializing ExecutorService  'threadPoolTaskExecutor' 
+09:52:54.671 INFO  []-[] AhjcWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"ahjc","pubId":1,"server":"http://ahjc.24cai.com/TEST_SEV/","token":"ahjc","type":"1","urls":["http://ahjc.24cai.com/TEST_SEV/","http://ahjc.caicai.com/",null,null,null,null,null,null,null,null],"webserver":"http://ahjc.caicai.com/","wxAccountEnum":"AHJC"} 
+09:52:55.116 INFO  []-[] AhtcWxService -- {"appid":"wxea356d53d3fa86d9","appsecret":"a8990930be1ee1964ebb9a71bd49ab5b","front":"http://lqm.24cai.com/memberCenter.html","key":"yicaile","noactivity":"","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":0,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html","",null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"AHTC"} 
+09:52:55.151 INFO  []-[] JwlWxService -- {"appid":"wx3592102b89af828b","appsecret":"6fce971ee557fc06093341fd4de595cf","key":"jwl","pubId":3,"server":"http://lqm.24cai.com/TEST_SEV/","token":"jwl","type":"1","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/",null,null,null,null,null,null,null,null],"webserver":"http://lqm.24cai.com/","wxAccountEnum":"JWL"} 
+09:52:55.187 INFO  []-[] LqmWxService -- {"appid":"wxe50759beade9edb0","appsecret":"09d1683fc654faed415e89c44a178533","front":"http://lqm.24cai.com/memberCenter.html","key":"ahtc","picktools":"http://lqm.24cai.com/selectionTool.html","pubId":2,"server":"http://lqm.24cai.com/TEST_SEV/","token":"yicaile","type":"0","urls":["http://lqm.24cai.com/TEST_SEV/","http://lqm.24cai.com/","http://lqm.24cai.com/memberCenter.html","http://lqm.24cai.com/selectionTool.html","http://lqm.24cai.com/a20161107.html",null,null,null,null,null],"vote":"http://lqm.24cai.com/a20161107.html","webserver":"http://lqm.24cai.com/","wxAccountEnum":"LQM"} 
+09:52:55.757 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.757 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahjc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:52:55.758 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.758 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/ahtc/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:52:55.759 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.759 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/jwl/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:52:55.761 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[POST],produces=[application/xml;charset=UTF-8]}" onto public void com.wechat.controller.AbstractWxPortalController.post(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.762 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/lqm/service],methods=[GET],produces=[text/plain;charset=utf-8]}" onto public java.lang.String com.wechat.controller.AbstractWxPortalController.authGet(java.lang.String,java.lang.String,java.lang.String,java.lang.String) 
+09:52:55.764 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/coupletsActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.coupletsActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.765 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/findActivityMember],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.findActivityMember(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.765 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/tggjsjActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.tggjsjActivityFrom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.766 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/voteActivityFrom],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.voteActivityFrom(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.766 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getVoteLists],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getVoteLists(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.766 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/activity/getDateBaseTime],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ActivityController.getDateBaseTime(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.767 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{serkey}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ClientServiceController.excute(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:52:55.767 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{id}/detail]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.value(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception 
+09:52:55.767 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/{type}/list]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.ContentServiceController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String) throws java.lang.Exception 
+09:52:55.768 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/redirect/ssl/{key}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.redirectView(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.768 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}/{id}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.768 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/{key}/i/{value}]}" onto public org.springframework.web.servlet.View com.wechat.webapi.web.controller.IController.toUrl(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.769 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/q/{key}]}" onto public void com.wechat.webapi.web.controller.QController.key(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.769 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/test/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:52:55.769 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/activity/data/{type}]}" onto public void com.wechat.webapi.web.controller.WechatActivityControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:52:55.770 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/client/service],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public com.wechat.webapi.web.model.ResponseBean com.wechat.webapi.web.controller.WechatClientServiceControllerler.getData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:52:55.771 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/getMenu]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getMenu() 
+09:52:55.771 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/wechat/menu/{server}]}" onto public void com.wechat.webapi.web.controller.WechatMenuControllerler.getDataTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException,java.lang.SecurityException 
+09:52:55.771 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String) 
+09:52:55.773 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+09:52:55.774 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+09:52:55.775 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+09:52:55.777 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+09:52:55.778 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+09:52:55.976 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:52:55.976 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:52:56.149 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Thu Feb 23 09:52:49 CST 2017]; root of context hierarchy 
+09:52:56.489 INFO  []-[] [/] -- jolokia: No access restrictor found, access to any MBean is allowed 
+09:52:57.260 INFO  []-[] VelocityConfigurer -- ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine 
+09:52:57.274 INFO  []-[] SpringResourceLoader -- SpringResourceLoader for Velocity: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed: startup date [Thu Feb 23 09:52:49 CST 2017]; root of context hierarchy] and resource loader paths [classpath:/templates/] 
+09:52:57.494 WARN  []-[] VelocityAutoConfiguration -- Cannot find template location: classpath:/templates/ (please add some templates, check your Velocity configuration, or set spring.velocity.checkTemplateLocation=false) 
+09:52:57.671 INFO  []-[] AnnotationMBeanExporter -- Registering beans for JMX exposure on startup 
+09:52:57.679 INFO  []-[] EndpointMBeanExporter -- Registering beans for JMX exposure on startup 
+09:52:57.682 INFO  []-[] AnnotationConfigEmbeddedWebApplicationContext -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20e48e63: startup date [Thu Feb 23 09:52:57 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed 
+09:52:57.717 INFO  []-[] DefaultListableBeanFactory -- Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in class org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration] 
+09:52:57.770 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat initialized with port(s): 7002 (http) 
+09:52:57.771 INFO  []-[] StandardService -- Starting service Tomcat 
+09:52:57.772 INFO  []-[] StandardEngine -- Starting Servlet Engine: Apache Tomcat/8.0.32 
+09:52:57.785 INFO  []-[] [/] -- Initializing Spring embedded WebApplicationContext 
+09:52:57.785 INFO  []-[] ContextLoader -- Root WebApplicationContext: initialization completed in 103 ms 
+09:52:57.805 INFO  []-[] ServletRegistrationBean -- Mapping servlet: 'dispatcherServlet' to [/] 
+09:52:57.806 INFO  []-[] FilterRegistrationBean -- Mapping filter: 'springSecurityFilterChain' to: [/*] 
+09:52:57.897 INFO  []-[] RequestMappingHandlerAdapter -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20e48e63: startup date [Thu Feb 23 09:52:57 CST 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a37d3ed 
+09:52:57.905 INFO  []-[] RequestMappingHandlerAdapter -- Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice 
+09:52:58.001 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal) 
+09:52:58.002 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.003 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.003 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.005 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) 
+09:52:58.005 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.006 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/actuator || /actuator.json],produces=[application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() 
+09:52:58.007 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception 
+09:52:58.008 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) 
+09:52:58.008 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.008 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.009 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.009 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.009 INFO  []-[] EndpointHandlerMapping -- Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() 
+09:52:58.014 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:52:58.014 INFO  []-[] SimpleUrlHandlerMapping -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+09:52:58.022 INFO  []-[] RequestMappingHandlerMapping -- Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke() 
+09:52:58.728 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-7002"] 
+09:52:58.737 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-7002"] 
+09:52:58.750 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:52:58.773 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 7002 (http) 
+09:52:58.779 INFO  []-[] DefaultLifecycleProcessor -- Starting beans in phase 0 
+09:52:58.782 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint] 
+09:52:58.811 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint] 
+09:52:58.816 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint] 
+09:52:58.820 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint] 
+09:52:58.824 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint] 
+09:52:58.829 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint] 
+09:52:58.834 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint] 
+09:52:58.838 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint] 
+09:52:58.846 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint] 
+09:52:58.849 INFO  []-[] EndpointMBeanExporter -- Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint] 
+09:52:58.871 INFO  []-[] Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-8080"] 
+09:52:58.871 INFO  []-[] Http11NioProtocol -- Starting ProtocolHandler ["http-nio-8080"] 
+09:52:58.873 INFO  []-[] NioSelectorPool -- Using a shared selector for servlet write/read 
+09:52:58.874 INFO  []-[] ScheduledTasks --  ---------->>  ThreadPoolTaskExecutor.getActiveCount() = (0) ---> 2017-02-23 09:52:58 
+09:52:58.876 INFO  []-[] TomcatEmbeddedServletContainer -- Tomcat started on port(s): 8080 (http) 
+09:52:58.882 INFO  []-[] WebApiApplication -- Started WebApiApplication in 10.078 seconds (JVM running for 10.615) 
+09:53:00.155 INFO  []-[] [/] -- Initializing Spring FrameworkServlet 'dispatcherServlet' 
+09:53:00.155 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization started 
+09:53:00.178 INFO  []-[] DispatcherServlet -- FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms 
+09:53:00.234 INFO  [101.226.233.139]-[/ahtc/service] SessionUtil --   ================= GET SESSION ID ++++++++++++++++    0201111BBB9554558941838594B9EEA5 
+09:53:00.235 INFO  [101.226.233.139]-[/ahtc/service] SessionUtil --   =================SET SESSION ID ++++++++++++++++    0201111BBB9554558941838594B9EEA5 
+09:53:00.253 INFO  [101.226.233.139]-[/ahtc/service] AhtcWechatController -- 
+ ----------------------- RequestMethod.GET >>  接收到来自微信服务器的认证消息：[db5f54e7d26b5f09b4c40aa56caccffbf63a2546,1487814774,1342010191,3237558443858391799] 

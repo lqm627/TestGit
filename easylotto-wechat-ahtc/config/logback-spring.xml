@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%X{req.remoteAddr}]-[%X{req.user}%X{req.requestURI}] %logger{0} -- %msg %n</Pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>TRACE</level>
+		</filter>
+	</appender>
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>./logs/webapi.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<FileNamePattern>./logs/webapi.%d{yyyy-MM-dd}.log</FileNamePattern>
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>90</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<Pattern>%d{HH:mm:ss.SSS} %-5level [%X{req.remoteAddr}]-[%X{req.user}%X{req.requestURI}] %logger{0} -- %msg %n	</Pattern>
+		</encoder>
+	</appender>
+     
+	<!-- Enable FILE and STDOUT appenders for all log messages. By default, 
+		only log at level INFO and above. -->
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<!-- <logger name="org.springframework.boot" level="DEBUG" /> -->
+	<logger name="springfox.documentation" level="WARN" />
+	<logger name="com.wechat.webapi" level="INFO" />
+	<logger name="com.easylotto.core" level="DEBUG" />
+	 
+</configuration>

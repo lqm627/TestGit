@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: wechatapi
+Implementation-Version: 20170213-SNAPSHOT
+Built-By: lqm
+Implementation-Vendor-Id: com.easylotto.wechat
+Build-Jdk: 1.8.0_112
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

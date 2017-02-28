@@ -1,0 +1,5 @@
+使用命令行进入此lib目录，执行以下命令添加jar到maven库
+
+mvn install:install-file -Dfile=springside-core-5.0.0-SNAPSHOT.jar -DgroupId=io.springside -DartifactId=springside-core -Dversion=5.0.0-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=springside-utils-5.0.0-SNAPSHOT.jar -DgroupId=io.springside -DartifactId=springside-utils -Dversion=5.0.0-SNAPSHOT -Dpackaging=jar
+mvn install:install-file -Dfile=BZPCXCode.jar -DgroupId=com.BZPCXCode -DartifactId=BZPCXCode -Dversion=1.0.0-SNAPSHOT -Dpackaging=jar

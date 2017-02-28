@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"    default-autowire="byName" default-lazy-init="false">
+
+	<!-- component-scan自动搜索@Component , @Controller , @Service , @Repository等标注的类 -->
+	<!-- 默认值如果适合，该项可以不用修改 -->
+	<!-- <context:component-scan base-package="com.**.service" />
+	<context:component-scan base-package="com.**.numbercheck" /> -->
+	<!-- 投注号码转化器 -->
+	<!-- 易趣门 -->
+  	<!-- <bean id="tcTestAccountService" class="com.easylotto.core.service.WechatAccountService" >
+		<property name="appid" value="wxe50759beade9edb0" />
+		<property name="appsecret" value="09d1683fc654faed415e89c44a178533" />
+		<property name="token" value="yicaile" />
+		<property name="type" value="1" />
+	</bean>   -->
+	<!-- 测试用 -->
+<!-- 	 	<bean id="tcTestAccountService" class="com.easylotto.core.service.WechatAccountService" >
+		<property name="appid" value="wxea356d53d3fa86d9" />
+		<property name="appsecret" value="a8990930be1ee1964ebb9a71bd49ab5b" />
+		<property name="token" value="yicaile" />
+		<property name="type" value="1" />
+	</bean>  -->
+	
+ 	<bean id="clientServiceFactory"
+		class="com.easylotto.core.service.ClientServiceFactory">
+		<property name="serviceMap">
+			<map>
+				<!--签到-->
+				<entry key="signIn" value-ref="signInService" />
+				<!-- 会员中心主页信息 -->
+				<entry key="memberInfo" value-ref="memberInfoService" />
+				<!-- 会员积分详情 -->
+				<entry key="integrallists" value-ref="integrallistsService" />
+				<!-- 会员信息修改-->
+				<entry key="memberInfoUpdate" value-ref="memberInfoUpdateService" />
+				<!--省份城市-->
+				<entry key="region" value-ref="regionService" />
+				
+				<!-- 订阅开奖信息大乐透-->
+				<entry key="subscribe_23" value-ref="subscribeLotteryService" />
+				<!-- 订阅开奖信息七星彩-->
+				<entry key="subscribe_4" value-ref="subscribeLotteryService" />
+				
+				<!-- 幸运大转盘-->
+				<entry key="luckyrotarytable" value-ref="luckyrotarytableService" />
+				
+				<!-- 推送大乐透开奖信息-->
+				<entry key="push_23" value-ref="pushLotteryService" />
+				<!-- 推送七星彩开奖信息-->
+				<entry key="push_4" value-ref="pushLotteryService" />
+				
+				<!-- 查询体彩所有彩种-->
+				<entry key="lotteryFindAll" value-ref="lotteryFindAllService" />
+				<!-- 查询大乐透列表数据和详情数据-->
+				<entry key="lottery_23" value-ref="lotteryFindTypeService" />
+				<!-- 查询七星彩列表数据和详情数据-->
+				<entry key="lottery_4" value-ref="lotteryFindTypeService" />
+				<!-- 查询排列三列表数据和详情数据-->
+				<entry key="lottery_13" value-ref="lotteryFindTypeService" />
+				<!-- 查询排列五列表数据和详情数据-->
+				<entry key="lottery_14" value-ref="lotteryFindTypeService" />
+				<!-- 查询胜负彩列表数据和详情数据-->
+				<entry key="lottery_1" value-ref="lotteryFindTypeService" />
+				<!-- 查询四场进球彩列表数据和详情数据-->
+				<entry key="lottery_8" value-ref="lotteryFindTypeService" />
+				<!-- 查询六场半全场列表数据和详情数据-->
+				<entry key="lottery_6" value-ref="lotteryFindTypeService" />
+				
+				<!-- 查询所有彩种的彩期信息-->
+				<entry key="lotteryTermFindAll" value-ref="lotteryTermFindAllService" />
+				<!-- 查询大乐透彩期信息-->
+				<entry key="lotteryTerm_23" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询七星彩彩期信息-->
+				<entry key="lotteryTerm_4" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询排列三列彩期信息-->
+				<entry key="lotteryTerm_13" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询排列五彩期信息-->
+				<entry key="lotteryTerm_14" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询胜负彩彩期信息-->
+				<entry key="lotteryTerm_1" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询四场进球彩彩期信息-->
+				<entry key="lotteryTerm_8" value-ref="lotteryTermFindTypeService" />
+				<!-- 查询六场半全场彩期信息-->
+				<entry key="lotteryTerm_6" value-ref="lotteryTermFindTypeService" />
+				
+				<!-- 查询新闻列表-->
+				<entry key="newsLists" value-ref="newsService" />
+				<!-- 查询新闻详情-->
+				<entry key="newsDetail" value-ref="newsDetailService" />
+				
+			    <!-- 查询大乐透开奖信息-->
+				<entry key="open_23" value-ref="openResultService" />
+				 <!-- 查询七星彩开奖信息-->
+				<entry key="open_4" value-ref="openResultService" />
+				<!-- 查询排列三开奖信息-->
+				<entry key="open_13" value-ref="openResultService" />
+				<!-- 查询排列五开奖信息-->
+				<entry key="open_14" value-ref="openResultService" />
+				<!-- 查询胜负彩开奖信息-->
+				<entry key="open_1" value-ref="openResultService" />
+				<!-- 查询四场进球彩开奖信息-->
+				<entry key="open_8" value-ref="openResultService" />
+				<!-- 查询六场半全场开奖信息-->
+				<entry key="open_6" value-ref="openResultService" />
+				
+				<!--模拟选号-->
+				<entry key="getPick" value-ref="pickToolsLogService" />
+				
+				<!--附近投注站信息-->
+				<entry key="nearBetLists" value-ref="nearBetListsService" />
+			    <!--中心投注站信息-->
+				<entry key="ticketInfo" value-ref="ticketInfoService" />
+				
+				<!--大乐透购彩页面需要的相关数据-->
+				<entry key="data_23" value-ref="lotteryDataService" />
+				<!--七星彩购彩页面需要的相关数据-->
+				<entry key="data_4" value-ref="lotteryDataService" />
+				<!--排列三购彩页面需要的相关数据-->
+				<entry key="data_13" value-ref="lotteryDataService" />
+				<!--排列五购彩页面需要的相关数据-->
+				<entry key="data_14" value-ref="lotteryDataService" />
+				<!--胜负彩购彩页面需要的相关数据-->
+				<entry key="data_1" value-ref="lotteryDataService" />
+				<!--四场进球彩购彩页面需要的相关数据-->
+				<entry key="data_8" value-ref="lotteryDataService" />
+				<!--六场半全场彩购彩页面需要的相关数据-->
+				<entry key="data_6" value-ref="lotteryDataService" />
+			</map>
+		</property>
+	</bean>
+	<bean id="wechatHandlerService" class="com.easylotto.core.service.WechatHandlerService" />
+
+</beans>

@@ -1,0 +1,1 @@
+nohup java -jar -Djava.security.egd=file:/dev/./urandom jms-wechatapi-20170125-SNAPSHOT8054.jar --server.port=8054 --management.port=7054 --logging.config=./config/8054logback-spring.xml >/dev/null 2>error &
